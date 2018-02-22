@@ -35,7 +35,7 @@ public class MainHome extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
-    private Toolbar topToolBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,9 +45,10 @@ public class MainHome extends AppCompatActivity {
         int ori = getScreenOrientation();
         if(ori == Configuration.ORIENTATION_PORTRAIT) ori = 3;
         else ori = 4;
-        String temp[] = {"C++", "Java", "HTML", "Koitlin", "SQL", "C", "CSS", "C++", "Java", "HTML", "Koitlin", "SQL", "C", "CSS", "C++", "Java", "HTML", "Koitlin", "SQL", "C", "CSS", "C++", "Java", "HTML", "Koitlin", "SQL", "C", "CSS"};
+        String temp[] = {"C++", "Java", "HTML", "Koitlin", "SQL", "C", "CSS", "Python", "Ruby"};
         final List<String> data = new ArrayList<>();
-        for(int i = 0; i < temp.length; i++) data.add(temp[i]);
+        for(int j = 0; j < 4; j++)
+            for(int i = 0; i < temp.length; i++) data.add(temp[i]);
         final RecyclerView rview = findViewById(R.id.rview);
         final BookAdapter bookAdapter = new BookAdapter(MainHome.this, data);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, ori);
