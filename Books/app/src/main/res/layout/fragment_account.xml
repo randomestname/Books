@@ -1,0 +1,312 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.books.AccountFragment">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/cbackground"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/gradientbackground"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Random Name"
+                    android:textColor="#fff"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="UserName"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="240dp"
+                android:background="#fff">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lent"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_lent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="125"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="?attr/colorPrimary"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Borrowed"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_borrowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="105"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="?attr/colorPrimary"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Points"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="360"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:textColor="?attr/colorPrimary"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:srcCompat ="@drawable/ic_email_black_24dp"
+                    android:tint="#fff"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Random Email"
+                    android:textColor="?attr/ctcolor"
+                    android:textStyle="bold"
+                    android:autoLink="email"
+                    android:linksClickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:srcCompat ="@drawable/ic_phone_black_24dp"
+                    android:tint="#fff"/>
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Number"
+                    android:textColor="?attr/ctcolor"
+                    android:textStyle="bold"
+                    android:autoLink="phone"
+                    android:linksClickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:srcCompat ="@drawable/ic_date_range_black_24dp"
+                    android:tint="#fff"/>
+
+                <TextView
+                    android:id="@+id/tv_semester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Semester"
+                    android:textColor="?attr/ctcolor"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:srcCompat ="@drawable/ic_art_track_black_24dp"
+                    android:tint="#fff"/>
+                <TextView
+                    android:id="@+id/tv_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Branch"
+                    android:textStyle="bold"
+                    android:textColor="?attr/ctcolor"/>
+            </LinearLayout>
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_marginBottom="15dp">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:srcCompat ="@mipmap/ic_launcher" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Random More Info"
+                    android:textStyle="bold"
+                    android:textColor="?attr/ctcolor"/>
+            </LinearLayout>
+            -->
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
+
+
+    <!--
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:text="First Name"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.038" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Last Name"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.275"
+                app:layout_constraintStart_toEndOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="Semester"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        </android.support.constraint.ConstraintLayout>
+        -->

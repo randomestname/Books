@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/cbackground"
+    tools:context="com.example.user.books.AddBookActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+                android:textColorHint="?attr/ccatcolor">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Book Title *"
+                    android:textColor="?attr/ccatcolor"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til2"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til"
+                android:textColorHint="?attr/ccatcolor">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Author *"
+                    android:textColor="?attr/ccatcolor"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til3"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til2"
+                android:textColorHint="?attr/ccatcolor">
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Publisher *"
+                    android:textColor="?attr/ccatcolor" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text=" Subject Name *"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textColorHint="?attr/ccatcolor"
+                android:textColor="?attr/ccatcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="42dp"
+                android:text=" Add an Image:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textColor="?attr/ccatcolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="153dp"
+                android:layout_height="154dp"
+                android:layout_marginStart="12dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/imageButton"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="156dp"
+                android:layout_height="63dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="72dp"
+                android:backgroundTint="?attr/cbtncolor"
+                android:text="Submit"
+                android:textColor="#FFFFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:textColor="?attr/ccatcolor"
+                android:popupBackground="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="45dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="?attr/cbtn"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

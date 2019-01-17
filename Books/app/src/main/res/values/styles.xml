@@ -1,11 +1,48 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!-- Day application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="cwhite">#FFFFFF</item>
+        <item name="cbackground">#EEE9E9</item>
+        <item name="ctcolor">#808080</item>
+        <item name="ccatcolor">#555</item>
+        <item name="cbtncolor">@color/colorPrimaryDark</item>
+        <item name="cbtn">#BDBDBD</item>
+        <item name="cdialog">@color/colorSecondary</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
     </style>
 
+    <!-- Night application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#313131</item>
+        <item name="colorSecondary">#313131</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="colorAccent">#AD1457</item>
+        <item name="cwhite">#212121</item>
+        <item name="cbackground">#424242</item>
+        <item name="ctcolor">#F5F5F5</item>
+        <item name="ccatcolor">#BDBDBD</item>
+        <item name="cbtncolor">#212121</item>
+        <item name="cbtn">#212121</item>
+        <item name="cdialog">#BDBDBD</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterTransition">@android:anim/fade_in</item>
+        <item name="android:windowExitTransition">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.DialogTheme">
+
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
 </resources>

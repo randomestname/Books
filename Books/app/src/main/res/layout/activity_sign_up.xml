@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/cbackground"
+    tools:context="com.example.user.books.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til"
+                android:layout_width="230dp"
+                android:layout_height="61dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+                <EditText
+                    android:id="@+id/ed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til2"
+                android:layout_width="230dp"
+                android:layout_height="61dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/til">
+
+                <EditText
+                    android:id="@+id/ed2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="UserName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til3"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til2">
+
+                <EditText
+                    android:id="@+id/ed3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til4"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til2">
+
+                <EditText
+                    android:id="@+id/ed4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Phone"
+                    android:inputType="phone" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til5"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="120dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til2">
+
+                <EditText
+                    android:id="@+id/ed5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="?attr/cbtncolor"
+                android:text="Submit"
+                android:textColor="#FFFFFFFF"
+                app:layout_constraintTop_toBottomOf="@+id/til5"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+                android:src="@drawable/ic_acim_24dp" />
+
+
+            <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/button3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="138dp"-->
+            <!--android:layout_marginEnd="138dp"-->
+            <!--android:text="Button"-->
+            <!--android:textColor="#FFFFFFFF"-->
+            <!--app:backgroundTint="#FF00BFFF"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="?attr/actionBarTheme"-->
+        <!--app:layout_constraintBottom_toTopOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+</android.support.constraint.ConstraintLayout>

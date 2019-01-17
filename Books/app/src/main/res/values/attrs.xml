@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="cwhite" format="color"/>
+        <attr name="cbackground" format="color"/>
+        <attr name="ctcolor" format="color"/>
+        <attr name="colorSecondary" format="color"/>
+        <attr name="ccatcolor" format="color"/>
+        <attr name="cbtncolor" format="color"/>
+        <attr name="cbtn" format="color"/>
+        <attr name="cdialog" format="color"/>
+    </declare-styleable>
+</resources>
