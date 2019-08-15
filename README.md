@@ -8,14 +8,14 @@ BookShare is an Android application to borrow and lend books. This is especially
 
 ### Features
 
-Dialogs to confirm user actions
-Splash, Login, Signup, Add New Book, View Book Details, Borrowed book details screens
-Image management
-Navigation drawer
-Home, Library and Account details screens
-Ability to Search for books and select light or dark theme
-Notification management (adding, sound and local database)
-Tutorial for new users
+- Dialogs to confirm user actions
+- Splash, Login, Signup, Add New Book, View Book Details, Borrowed book details screens
+- Image management
+- Navigation drawer
+- Home, Library and Account details screens
+- Ability to Search for books and select light or dark theme
+- Notification management (adding, sound and local database)
+- Tutorial for new users
 
 
 ### Motivation
@@ -25,11 +25,11 @@ This application has been built as an academic project for an Android developmen
 
 ### APIs used
 
-com.android.support:design:26.1.0
-com.getkeepsafe.taptargetview: taptargetview:1.11.0
-com.android.support:recyclerview-v7:26.1.0
-com.android.support:cardview-v7:26.1.0
-com.miguelcatalan:materialsearchview:1.4.0
+- com.android.support:design:26.1.0
+- com.getkeepsafe.taptargetview: taptargetview:1.11.0
+- com.android.support:recyclerview-v7:26.1.0
+- com.android.support:cardview-v7:26.1.0
+- com.miguelcatalan:materialsearchview:1.4.0
 
 
 ### Code style
@@ -61,6 +61,6 @@ Make a local database for user books, so the user can access the app without int
 
 ### Build status
 
-build- passing
-code coverage- -
+- build- passing
+- code coverage- -
 
